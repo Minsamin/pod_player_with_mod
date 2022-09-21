@@ -4,6 +4,7 @@ class PodPlayerLabels {
   final String? mute;
   final String? unmute;
   final String settings;
+  final String exitPlayer;
   final String? fullscreen;
   final String? exitFullScreen;
   final String loopVideo;
@@ -21,6 +22,7 @@ class PodPlayerLabels {
     this.unmute,
     this.settings = 'Settings',
     this.fullscreen,
+    this.exitPlayer = 'Exit',
     this.exitFullScreen,
     this.loopVideo = 'Loop Video',
     this.playbackSpeed = 'Playback speed',

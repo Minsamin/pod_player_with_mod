@@ -65,6 +65,22 @@ class _MobileBottomSheet extends StatelessWidget {
               });
             },
           ),
+          _bottomSheetTiles(
+            title: _podCtr.podPlayerLabels.exitPlayer,
+            icon: Icons.close,
+            onTap: () {
+              SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
+              SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+              if(_podCtr.isFullScreen){
+                Navigator.of(context).pop();
+                Navigator.of(context).pop();
+                Navigator.of(context).pop();
+              } else {
+                Navigator.of(context).pop();
+                Navigator.of(context).pop();
+              }
+            },
+          ),
         ],
       ),
     );
